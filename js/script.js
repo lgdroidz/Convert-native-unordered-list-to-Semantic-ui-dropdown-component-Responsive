@@ -12,7 +12,11 @@ $(window).resize(function(){
     var $width_ = $(window).width();
     change_to_dropdown($width_);
 });
-
+// this area will add the classes that will show the list
+// we are just using dropdown and transition component in semanticui 
+// to prevent the conflict of native css on your site.
+// $('.ui.dropdown').dropdown() i think will work only if you added some features on the semantic components, 
+// but in my case i'm lazy (hahahha) so i just created my on click event to add the required classes to show the list.
 $(document).on('click','.ui.dropdown', function(){
     $category_.toggleClass('active visible');
     $category_.find('ul').removeClass('hidden').toggleClass('visible');
