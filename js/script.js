@@ -2,16 +2,19 @@
 var $process = true; // process for the resize part
 var $category_ = $('.category-list');
 var $category_text = $('.category-list-text');
+
 // Will fire during load
 $(window).on('load', function(){
     var $width_ = $(window).width();
     change_to_dropdown($width_);
 });
+
 // Will fire during resizing especially on browsers
 $(window).resize(function(){
     var $width_ = $(window).width();
     change_to_dropdown($width_);
 });
+
 // this area will add the classes that will show the list
 // we are just using dropdown and transition component in semanticui 
 // to prevent the conflict of native css on your site.

@@ -1,1 +1,1 @@
-# Convert-native-unordered-list-to-Semantic-ui-dropdown-component
+# Convert native unordered list to Semantic-ui dropdown component
